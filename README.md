@@ -4,6 +4,14 @@ Selected software and product work — web applications, data-driven tools, auto
 
 ## Projects
 
+### Murder Hornet Command Center
+
+**I built an AI-assisted business command center to turn fragmented sales and operations data into decisions we can act on.** I brought Shopify, Faire, Square, QuickBooks Online and inventory reporting into a secure, mobile-first dashboard—defining the business requirements, directing an AI engineering agent, validating the data and deploying the application.
+
+[**Explore the case study and screenshots →**](projects/mhhs-command-center.md) · Application and source repository are private
+
+[<img src="assets/mhhs-command-center/home-desktop.png" alt="Murder Hornet Command Center home dashboard using illustrative data" width="760">](projects/mhhs-command-center.md)
+
 ### LocalSEO-iQ
 
 **Local business intelligence and customer dashboard.** A privately developed SaaS project connecting local search measurements, website assessments, prioritized actions, and ongoing performance tracking.
