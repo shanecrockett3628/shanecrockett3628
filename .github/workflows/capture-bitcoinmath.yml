@@ -1,0 +1,59 @@
+name: Capture authentic BitcoinMath screenshots
+on:
+  push:
+    paths: [.github/workflows/capture-bitcoinmath.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Capture genuine screenshots
+        run: |
+          node <<'JS'
+          const fs = require('fs');
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1440, height: 1150 }, deviceScaleFactor: 1 });
+            fs.mkdirSync('assets/bitcoinmath', { recursive: true });
+            const jobs = [
+              { file:'calculator-library.jpg', url:'https://bitcoinmath.org/calculators/', heading:'Bitcoin Calculators', offset:110 },
+              { file:'readiness-model.jpg', url:'https://bitcoinmath.org/calculators/living-a-btc-standard-getting-started/', heading:'Your starting Bitcoin requirement', offset:-110 },
+              { file:'retirement-model.jpg', url:'https://bitcoinmath.org/calculators/retire-on-btc/', heading:'Explore your retirement', offset:-110 },
+              { file:'income-strategy.jpg', url:'https://bitcoinmath.org/calculators/bitcoin-income-strategy/', heading:'Modeled outcome', offset:-110 }
+            ];
+            for (const job of jobs) {
+              await page.goto(job.url, { waitUntil:'domcontentloaded', timeout:60000 });
+              await page.waitForTimeout(5500);
+              await page.evaluate(async () => { if (document.fonts?.ready) await document.fonts.ready; });
+              const target = page.getByText(job.heading, { exact:false }).first();
+              if (await target.count()) {
+                await target.scrollIntoViewIfNeeded({ timeout:8000 }).catch(() => {});
+                await page.evaluate(o => window.scrollBy(0,o),job.offset);
+              } else await page.evaluate(o => window.scrollTo(0,Math.max(o,0)),job.offset);
+              await page.waitForTimeout(1200);
+              await page.screenshot({path:'assets/bitcoinmath/'+job.file,type:'jpeg',quality:86,animations:'disabled'});
+              console.log('Captured',job.file,'from',page.url());
+            }
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Add screenshots to the portfolio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/bitcoinmath/*.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Capture authentic BitcoinMath calculator screenshots"
+            git push
+          fi
