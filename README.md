@@ -28,7 +28,9 @@ I'm also a **Co-Owner of Murder Hornet Hot Sauce**, focused on **Growth, Operati
 
 **Turning complex financial questions into hands-on tools.** I created a public library of interactive calculators that help users explore saving, borrowing, retirement, income strategies, and Bitcoin-related financial decisions. Visitors can adjust assumptions, compare scenarios, and see how the math changes.
 
-[**Explore the case study →**](projects/bitcoinmath.md) · [**Try the live calculators →**](https://bitcoinmath.org/calculators/)
+[**Explore the case study and screenshots →**](projects/bitcoinmath.md) · [**Try the live calculators →**](https://bitcoinmath.org/calculators/)
+
+[<img src="assets/bitcoinmath/retirement-model.jpg" alt="BitcoinMath twenty-year retirement model showing peak Bitcoin requirement, loan-to-value alternatives, and interactive chart" width="760">](projects/bitcoinmath.md)
 
 ## How I build
 
