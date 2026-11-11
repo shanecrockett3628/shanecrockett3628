@@ -1,31 +1,41 @@
 # Shane Crockett
 
-Selected software and product work — web applications, data-driven tools, automation, and AI-assisted development.
+**Growth & strategy leader | AI-enabled product builder | Financial services & enterprise technology**
 
-## Projects
+My career has centered on business growth, strategic partnerships, and financial services. Increasingly, I use AI and modern development tools to turn business problems into working products: defining the opportunity, setting requirements, directing AI-assisted engineering, and validating the results.
 
-### Murder Hornet Command Center
+I'm also a **Co-Owner of Murder Hornet Hot Sauce**, focused on **Growth, Operational Optimization & Financial Strategy**. The projects below reflect a practical approach to AI: **identify a problem, build a solution, and make it useful.**
 
-**I built an AI-assisted business command center to turn fragmented sales and operations data into decisions we can act on.** I brought Shopify, Faire, Square, QuickBooks Online and inventory reporting into a secure, mobile-first dashboard—defining the business requirements, directing an AI engineering agent, validating the data and deploying the application.
+## Featured projects
 
-[**Explore the case study and screenshots →**](projects/mhhs-command-center.md) · Application and source repository are private
+### Murder Hornet Command Center — AI-enabled business operations
 
-[<img src="assets/mhhs-command-center/home-desktop.png" alt="Murder Hornet Command Center home dashboard using illustrative data" width="760">](projects/mhhs-command-center.md)
+**From fragmented sales and financial data to a dependable operating view.** I led the build of a secure, mobile-first command center connecting Shopify, Faire, Square, QuickBooks Online, and inventory reporting. I owned the business requirements, product direction, data validation, and deployment, working with Claude as an AI engineering agent.
 
-### LocalSEO-iQ
+[**Explore the case study and screenshots →**](projects/mhhs-command-center.md) · Application and source repository: private
 
-**Local business intelligence and customer dashboard.** A privately developed SaaS project connecting local search measurements, website assessments, prioritized actions, and ongoing performance tracking.
+[<img src="assets/mhhs-command-center/home-desktop.png" alt="Murder Hornet Command Center executive dashboard using illustrative data" width="760">](projects/mhhs-command-center.md)
 
-[**View the project walkthrough and screenshots →**](projects/localseo-iq.md) · Source repository: private
+### LocalSEO-iQ — AI-assisted SaaS product development
 
-[<img src="assets/localseo-iq/initial-full-overview.png" alt="LocalSEO-iQ example Initial Full dashboard Overview" width="760">](projects/localseo-iq.md)
+**Making local search intelligence actionable for small businesses.** A privately developed SaaS platform combining Google Business Profile signals, search visibility, website assessments, competitive intelligence, and prioritized recommendations. The work spans product strategy, data methodology, technical integrations, UX, and ongoing testing.
 
-### BitcoinMath.org
+[**Explore the product walkthrough and screenshots →**](projects/localseo-iq.md) · Application source repository: private
 
-**Interactive Bitcoin and financial scenario calculators.** A public collection of financial modeling tools that lets visitors adjust assumptions and explore outcomes.
+[<img src="assets/localseo-iq/initial-full-overview.png" alt="LocalSEO-iQ example dashboard overview" width="760">](projects/localseo-iq.md)
 
-[**View the project notes →**](projects/bitcoinmath.md) · [Explore the live website ↗](https://bitcoinmath.org)
+### BitcoinMath.org — Interactive financial modeling
+
+**Turning complex financial questions into hands-on tools.** I created a public library of interactive calculators that help users explore saving, borrowing, retirement, income strategies, and Bitcoin-related financial decisions. Visitors can adjust assumptions, compare scenarios, and see how the math changes.
+
+[**Explore the case study →**](projects/bitcoinmath.md) · [**Try the live calculators →**](https://bitcoinmath.org/calculators/)
+
+## How I build
+
+- **Start with the business challenge:** Define the user problem, the opportunity, and what success looks like.
+- **Use AI to accelerate execution:** Translate business requirements into design, engineering, analysis, testing, and iterative improvements.
+- **Stay accountable for results:** Check the data, logic, assumptions, edge cases, and user experience before trusting the output.
 
 ---
 
-Project screenshots and notes focus on product design and implementation. Private application source code, operational data, and credentials are not included here.
+**Portfolio note:** These pages showcase product thinking, architecture, design, and practical AI fluency. Proprietary code, credentials, customer data, and internal financial records are not published here.
