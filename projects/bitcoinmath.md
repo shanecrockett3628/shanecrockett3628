@@ -52,11 +52,35 @@ The hard part isn't only building a calculator interface. It's making the underl
 - **Systems thinking:** Connect inputs, calculation rules, risk conditions, visualizations, and explanations.
 - **End-to-end execution:** Move from idea to a publicly accessible product, then continuously improve it.
 
-## Screenshots and live demonstrations
+## Visual walkthrough
 
-The linked live calculators are the most current representation of the product. Authentic screenshots will be added here once captured from the current site; older images are intentionally not presented as current UI.
+*Screenshots captured from the live public calculators on November 11, 2026. Figures are illustrative outputs from example assumptions, not investment forecasts. Click through to the live tools to change the inputs yourself.*
 
-The full interactive experience is available at **[BitcoinMath.org](https://bitcoinmath.org)**.
+### 01 · A library of financial models
+
+Saving, financing, retirement, borrowing, and Bitcoin lifestyle decisions organized around real-world questions.
+
+[![BitcoinMath calculator library with categories and interactive calculator cards](../assets/bitcoinmath/calculator-library.jpg)](https://bitcoinmath.org/calculators/)
+
+### 02 · Bitcoin Standard Readiness: model a full decade
+
+Editable annual Bitcoin price paths feed a ten-year simulation. The model calculates the starting BTC requirement needed to remain below its assumed liquidation threshold at every monthly checkpoint.
+
+[![Bitcoin Standard Readiness with adjustable annual price scenarios and a modeled starting Bitcoin requirement](../assets/bitcoinmath/readiness-model.jpg)](https://bitcoinmath.org/calculators/living-a-btc-standard-getting-started/)
+
+### 03 · Retire on Bitcoin: connect spending, debt, and collateral
+
+A twenty-year model compares 30% and 50% target loan-to-value paths, identifies peak collateral requirements, and charts the relationship between borrowing needs and Bitcoin holdings.
+
+[![Retire on Bitcoin dashboard with peak BTC requirement, 30 and 50 percent LTV paths, and a retirement chart](../assets/bitcoinmath/retirement-model.jpg)](https://bitcoinmath.org/calculators/retire-on-btc/)
+
+### 04 · Bitcoin Income Strategy: explore financing economics
+
+Loan-to-value, borrowing APR, modeled preferred-equity distributions, and time horizon combine to illustrate cash-flow tradeoffs alongside a hold-Bitcoin baseline.
+
+[![Bitcoin Income Strategy interface with preferred-equity choices, loan and Bitcoin assumptions, and financing options](../assets/bitcoinmath/income-strategy.jpg)](https://bitcoinmath.org/calculators/bitcoin-income-strategy/)
+
+**[Try the live calculators at BitcoinMath.org →](https://bitcoinmath.org/calculators/)**
 
 ## Scope and limitations
 
