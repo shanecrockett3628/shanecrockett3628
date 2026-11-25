@@ -1,81 +1,52 @@
 # LocalSEO-iQ
 
-**Local search intelligence · Automated measurement and reporting · Private-source SaaS project**
+**Local search intelligence for independent businesses · Private-source SaaS, in development**
 
-LocalSEO-iQ brings local search visibility, Google Business Profile signals, website assessments, and conversion readiness into a customer-facing workspace. The product connects an introductory **Free Snapshot** with a more detailed **Initial Full** baseline, an action-oriented dashboard, and a recurring measurement experience under development.
+LocalSEO-iQ measures how a local business shows up when nearby customers search, explains why in plain English, and turns the findings into a prioritized plan. It's built for owners of one or two locations who want to understand and improve their local search presence themselves, or hand the work to their own staff.
 
 [← Back to the projects overview](../README.md)
 
-## Product walkthrough
+## How it works
 
-The screenshots below were supplied for this portfolio as an example **Luna Park Cafe** interface. They illustrate product design and interactions, **not independently audited business performance**. The Free Snapshot and Initial Full views have different measurement scopes; their scores should not be read as a before-and-after performance change.
-
-### 01 · Free Snapshot
-
-The introductory assessment summarizes four controllable areas: Google Business Profile, On-Page SEO, Domain Trust & Authority, and Conversion Readiness. The results direct customers toward the next actions rather than only displaying scores.
-
-![Free Snapshot showing four controllable pillar cards, scores, and a consolidated attention list](../assets/localseo-iq/free-pillar-scores.png)
-
-*Four controllable pillars, measured-signal breakdowns, and an attention summary.*
-
-The Search Visibility preview uses a smaller measurement set across ten geographical origins and two Google surfaces, with the origin map alongside observed results.
-
-![Free Snapshot Search Visibility map showing ten origins and the Maps and Local Finder results table](../assets/localseo-iq/free-search-map.png)
-
-*Free Snapshot: ten measurement origins and twenty surface checks. [Open the full-size image](../assets/localseo-iq/free-search-map.png).*
-
-### 02 · Initial Full — Overview
-
-The paid dashboard combines Search Visibility with the four controllable pillars. The Overview offers a current weighted baseline, an explanation of its component scores, and a Growth Profile for context.
-
-![Initial Full dashboard overview showing an overall score, score components, and Growth Profile](../assets/localseo-iq/initial-full-overview.png)
-
-*Overview: current score and its components, with deeper navigation into the workspace.*
-
-### 03 · Initial Full — Action Plan
-
-Evidence-backed work is organized as actionable tasks. The interface supports different views of the same list and separates work that has been marked completed from improvement verified by later measurements.
-
-![Initial Full Action Plan showing prioritized actions, work type grouping, and completion controls](../assets/localseo-iq/initial-full-action-plan.png)
-
-*Action Plan: work grouped by type, with item-level evidence links and completion controls.*
-
-### 04 · Initial Full — Search Visibility
-
-The expanded Search view shows the measurement scope, individual search outcomes, and filters for terms, intent, and Google surface. The example below displays four terms measured across ten origins and two surfaces, producing 80 observations.
-
-![Initial Full Search Visibility dashboard with score, filter controls, and a ranking grid](../assets/localseo-iq/initial-full-search-grid.png)
-
-*Search Visibility: a detailed ranking grid with term and surface filters.*
-
-An interpretation layer makes patterns legible: near-me versus city-modified queries, Maps versus Local Finder, and individual search-term summaries.
-
-![Initial Full Search Visibility interpretations showing proximity and surface differences, plus term-level outcomes](../assets/localseo-iq/initial-full-search-analysis.png)
-
-*Search interpretation: observations and comparisons that sit alongside the raw grid.*
-
-The competitive view shows repeat leaders and a fuller comparison table rather than a disconnected list of competitors.
-
-![Initial Full competitor analysis showing top repeated competitors and the larger market table](../assets/localseo-iq/initial-full-competitors.png)
-
-*Competitive context: repeated leaders and market-wide comparison.*
-
-<!-- Progress page screenshot is intentionally not included until an authentic example is provided. -->
-
-## Behind the experience
-
-| Area | Implementation approach |
+| | |
 | --- | --- |
-| Measurement | External search, business, performance, authority, and web evidence sources |
-| Processing | Python-based measurement and analysis with JavaScript/Node.js services |
-| Orchestration | Background workers, Redis queues, and MongoDB persistence |
-| Customer experience | Free intake, paid onboarding, dashboard views, reporting, and action tracking |
-| AI-assisted workflows | Interpretation, product iteration, testing, and engineering collaboration |
+| **Freemium** | A free scan in under a minute: one search checked from 10 real locations around the business, plus a first read on its listing, website, authority and customer experience. The result is a Growth Profile in plain language. |
+| **Premium** | A full scan of four searches from the same 10 locations on Google Maps and Google Search (80 checks), the four pillars below, competitor comparisons and AI search visibility. The result is a dashboard with an Action Plan, Fix Briefs and a library of vetted citation sources. |
+| **Weekly** | The same full scan runs every week. Progress is tracked against the starting scan and summarized in a weekly email. |
 
-The ongoing engineering work involves coordinating several external services, website crawling, PageSpeed Insights timing, result accuracy, and distinguishing **unavailable measurements** from genuine zero scores. Customer-completed actions are not automatically equivalent to independently verified improvement.
+**What's measured:** Search Visibility (where the business ranks) plus four pillars, grouped by whether they help a business *get found* or *get chosen*:
 
-## Scope and availability
+- **Getting found:** Google Business Profile · Website (on-page SEO) · Domain Authority & Trust
+- **Getting chosen:** Conversion Readiness (how easy it is to call, book or visit)
 
-The application repository and customer data are private. These screenshots show a sample interface and do not establish that every recurring workflow, measurement, or score has been independently accepted for production use.
+## Screens
+
+The screens below show a real November 2026 scan of a Seattle sports bar. The business is renamed **Stainer's Sports Bar** and competitor names are masked. Scores and rankings are as measured. Premium screens are from the beta dashboard.
+
+![Freemium on a phone: one-question intake, the live scan, and the Growth Profile result](../assets/localseo-iq/freemium-phone.png)
+
+*Freemium: intake, the scan in progress, and the result.*
+
+![Premium on a phone: Overview, search visibility from 10 spots, and a finding with its Fix Brief](../assets/localseo-iq/premium-phone.png)
+
+*Premium on a phone: Overview, search visibility across 10 spots, and a finding leading to its Fix Brief.*
+
+![Premium on desktop: pillar scores, Growth Profile, the top 5 competitors and the Action Plan](../assets/localseo-iq/premium-desktop.png)
+
+*Premium on desktop: the same data with room to work.*
+
+## Under the hood
+
+| Area | Approach |
+| --- | --- |
+| Data | Google search and business data, website crawling and performance, authority and link data, and AI assistant answers, from established third-party providers |
+| Processing | Python measurement and scoring; Node.js API and services |
+| Orchestration | Background workers, Redis queues, MongoDB |
+| Front end | Phone-first web app; React dashboard |
+| Build | Product, UX and engineering directed by me, built with Claude as an AI engineering agent |
+
+## Status
+
+In development, preparing for a first group of customers. The application, its source and customer data are private.
 
 [← Back to the projects overview](../README.md)

@@ -18,11 +18,11 @@ I'm also a **Co-Owner of Murder Hornet Hot Sauce**, focused on **Growth, Operati
 
 ### LocalSEO-iQ — AI-assisted SaaS product development
 
-**Making local search intelligence actionable for small businesses.** A privately developed SaaS platform combining Google Business Profile signals, search visibility, website assessments, competitive intelligence, and prioritized recommendations. The work spans product strategy, data methodology, technical integrations, UX, and ongoing testing.
+**Local search intelligence for independent businesses.** A privately developed SaaS platform that measures how a business shows up in local search, explains why in plain English, and turns the findings into a prioritized plan the owner can work weekly. The work spans product strategy, data methodology, technical integrations, UX and ongoing testing.
 
-[**Explore the product walkthrough and screenshots →**](projects/localseo-iq.md) · Application source repository: private
+[**See how it works →**](projects/localseo-iq.md) · Application source repository: private
 
-[<img src="assets/localseo-iq/initial-full-overview.png" alt="LocalSEO-iQ example dashboard overview" width="760">](projects/localseo-iq.md)
+[<img src="assets/localseo-iq/premium-desktop.png" alt="LocalSEO-iQ Premium dashboard overview for a renamed sample business" width="760">](projects/localseo-iq.md)
 
 ### BitcoinMath.org — Interactive financial modeling
 
